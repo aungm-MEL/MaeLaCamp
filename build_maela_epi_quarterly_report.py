@@ -74,7 +74,7 @@ CUMMU_SUMMARY_COLUMNS = [
 ]
 
 ALOD_CUMMU_COLUMNS = [
-    "Period",
+    "Year",
     "Organization",
     "Project Name",
     "indicator",
@@ -101,7 +101,7 @@ ALOD_CUMMU_COLUMNS = [
 ]
 
 INDICATOR_COLUMNS = [
-    "Period",
+    "Year",
     "Organization",
     "Project Name",
     "indicator",
@@ -715,7 +715,7 @@ def create_alod_cummu_sheet_from_long_form(long_form: pd.DataFrame) -> pd.DataFr
         s2_u1_m, s2_u1_f, s2_u5_m, s2_u5_f, s2_total = period_counts(base_mask, 7, 12)
 
         row: dict[str, object] = {
-            "Period": int(year_value),
+            "Year": int(year_value),
             "Organization": "PRF",
             "Project Name": "REACH-KK",
             "indicator": "At least one dose under 5-yr-old",
@@ -824,7 +824,7 @@ def create_indicator_sheet_from_long_form(long_form: pd.DataFrame) -> pd.DataFra
     for year_value in years:
         for indicator in INDICATOR_NAMES:
             row: dict[str, object] = {
-                "Period": year_value,
+                "Year": year_value,
                 "Organization": "MaeLa Camp",
                 "Project Name": "REACH-KK",
                 "indicator": indicator,
