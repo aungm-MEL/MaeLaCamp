@@ -563,7 +563,7 @@ def create_summary_sheet_from_long_form(long_form: pd.DataFrame) -> pd.DataFrame
             "Project Name": "REACH-KK",
             "District (EHO)": "",
             "Township_EHO": "",
-            "Twp_MIMU": "",
+            "Twp_MIMU": "Tha Song Yang",
             "Clinic Name": "MaeLa Camp",
         }
 
